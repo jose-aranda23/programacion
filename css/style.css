@@ -1,7 +1,25 @@
+body{
+    font-family: 'Roboto', sans-serif;  /* Fuente moderna y legible */ 
+    background-color: #1c153a;          /* Fondo oscuro para un look tecnológico */
+  
+    /* Márgenes y espaciado */
+    margin: 10px;
+    padding: 10px;
+    overflow-x: hidden;
+
+    list-style-type: none;
+    text-decoration: none;
+}
+
+a{
+    text-decoration: none;
+    color:red;
+}
+
 /*================================================= ENCAVEZADO ==============================================*/
 
 header{
-    color:red ;
+    color:rgb(255, 255, 255) ;
     display: flex;
     display: block;
     justify-content: center;
@@ -13,9 +31,9 @@ header{
     display: flex;
     justify-content: center;
 }
-.logo{
+ .logo {
     border-radius: 50%;
-    width: 200px;
+    width: 200px !important; 
 }
 aside{
     display: flex;
@@ -30,9 +48,10 @@ aside{
     display: flex;
     width: 250px;
     list-style-type: none;
-    color: black;
-    background-color: brown;
-    border:3px solid blue;
+    text-decoration: none;
+    color: wheat;
+    background-color: rgb(140, 41, 179);
+    border:3px solid red;
     border-radius: 25px;
     margin: 10px;
     justify-content: center;
@@ -40,6 +59,7 @@ aside{
 
 /*============================================ NOTICIAS ==================================================== */
 #titulares{
+    color:wheat;
     display: flex;
     justify-content: center;
 }
@@ -47,22 +67,27 @@ aside{
     display: grid;
     grid-template-columns: auto auto auto;
     justify-content: center;
-    border:3px solid blue;
     margin-top: 30px;
 }
 
 .noticia{
     border:3px solid red;
+    border-radius: 5%;
+    background-color: #380375;
     padding: 10px;
     margin: 10px;
-    width: 300px;
-    height: 500px;
+    width: 350px;
+    height: 550px;
 }
 .noticia h4{
+    color:white;
     margin: 0;
     margin-bottom: 10px;
 }
 
+.noticia p{
+    color:wheat;
+}
 img{
     width: 300px;
 }
@@ -71,10 +96,10 @@ img{
 .acerca{
     display:flex;
     justify-content: center;
-    border:3px solid blue;
     margin-top: 30px;
 }
 .h1{
+    color:wheat;
     display: grid;
     grid-template-rows: auto;
     text-align: center;
@@ -87,9 +112,11 @@ img{
 }
 .descripcion{
     border:3px solid red;
+    border-radius: 5%;
+    background-color: #380375;
     padding: 10px;
     margin: 10px;
-    width: 300px;
+    width: 350px;
     height: 300px;
 } 
 
@@ -99,18 +126,21 @@ img{
     display: flex;
     justify-content: center;
     margin-top: 30px;
-    border:3px solid blue;
 }
 .contac{
+    color:wheat;
+    border:3px solid red;
+    border-radius: 5%;
+    background-color: #380375;
     align-items: center;
     width: 500px;
-    border:3px solid red;
     margin: 10px;
     padding: 10px;
 
 }
 /* =============================================== FOOTER ================================================ */
 footer{
+    color:wheat;
     display: flex;
     justify-content: center;
     margin-top: 30px;
@@ -171,7 +201,7 @@ footer{
     .contac{
         display: grid;
         grid-template-columns: auto;
-        width: 300px;
+        width: 310px;
         margin: 10px;
         padding: 10px;
     }
