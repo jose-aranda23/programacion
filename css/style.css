@@ -1,0 +1,203 @@
+/*================================================= ENCAVEZADO ==============================================*/
+
+header{
+    color:red ;
+    display: flex;
+    display: block;
+    justify-content: center;
+    align-content: center;
+    font-size: 30px;
+    text-align: center;
+}
+.principal{
+    display: flex;
+    justify-content: center;
+}
+.logo{
+    border-radius: 50%;
+    width: 200px;
+}
+aside{
+    display: flex;
+    justify-content: center;
+}
+/*===================================================== MENU ================================================*/
+.menu ul{
+    display: flex;
+    justify-content: center;
+}
+.menu ul li{
+    display: flex;
+    width: 250px;
+    list-style-type: none;
+    color: black;
+    background-color: brown;
+    border:3px solid blue;
+    border-radius: 25px;
+    margin: 10px;
+    justify-content: center;
+}
+
+/*============================================ NOTICIAS ==================================================== */
+#titulares{
+    display: flex;
+    justify-content: center;
+}
+.titulares{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    border:3px solid blue;
+    margin-top: 30px;
+}
+
+.noticia{
+    border:3px solid red;
+    padding: 10px;
+    margin: 10px;
+    width: 300px;
+    height: 500px;
+}
+.noticia h4{
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+img{
+    width: 300px;
+}
+
+/* ============================================ACERCA DE ==================================== */
+.acerca{
+    display:flex;
+    justify-content: center;
+    border:3px solid blue;
+    margin-top: 30px;
+}
+.h1{
+    display: grid;
+    grid-template-rows: auto;
+    text-align: center;
+}
+
+.article{
+    display:grid;
+    grid-template-columns: auto auto auto;
+    text-align: center;
+}
+.descripcion{
+    border:3px solid red;
+    padding: 10px;
+    margin: 10px;
+    width: 300px;
+    height: 300px;
+} 
+
+/* ============================================= CONTACTO ==================================================*/
+
+.contacto{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    border:3px solid blue;
+}
+.contac{
+    align-items: center;
+    width: 500px;
+    border:3px solid red;
+    margin: 10px;
+    padding: 10px;
+
+}
+/* =============================================== FOOTER ================================================ */
+footer{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+/* ========================================= DICEÑO RESPONSIVO ============================================= */
+
+
+@media(max-width:40em){
+
+    /*===============================================ENCAVEZADO===========================================*/
+    .principal {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .menu nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    .cabeza {
+        font-size: 1.2rem;
+    }
+
+    .logo {
+        max-width: 60px;
+    }
+
+    /* titulares */
+
+    .titulares {
+        grid-template-columns: 1fr; /* Cambia a una columna en pantallas más pequeñas */
+        display: grid;
+        grid-template-columns: auto;
+        margin: auto;
+        padding: auto;
+    }
+
+    /* acerca */
+    
+    .article{
+        grid-template-columns: 1fr; /* Cambia a una columna en pantallas más pequeñas */
+        display: grid;
+        grid-template-columns: auto;
+        margin: auto;
+        padding: auto;
+    }
+
+    /* contacto */
+    .contacto{
+        grid-template-columns: 1fr; /* Cambia a una columna en pantallas más pequeñas */
+        display: grid;
+        grid-template-columns: auto;
+        margin-top: 30px;
+        padding: auto;
+    
+    }
+    .contac{
+        display: grid;
+        grid-template-columns: auto;
+        width: 300px;
+        margin: 10px;
+        padding: 10px;
+    }
+}
+
+
+@media (max-width: 40em){
+    
+    .cabeza {
+        font-size: 1rem;
+    }
+
+    .logo {
+        max-width: 50px;
+    }
+
+    .menu nav ul a {
+        font-size: 0.9rem;
+        padding: 0.5rem;
+    }
+
+    .noticia p {
+        font-size: 0.9rem;
+    }
+
+    .contacto p, .contacto h1 {
+        font-size: 1rem;
+    }
+}
